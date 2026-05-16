@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Reserva de Turmas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div style="max-width: 600px; margin: 0 auto;">
+    <h1>📚 Cadastro de Aluno</h1>
+
+    <form id="formAluno">
+        <input type="text" placeholder="Nome completo" id="nome" required>
+        <input type="date" placeholder="Data de nascimento" id="data" required>
+        <input type="email" placeholder="Email" id="email" required>
+        <input type="password" placeholder="Senha" id="senha" required>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <p id="feedback"></p>
+
+    <hr>
+
+    <h1>🎓 Criar Turma</h1>
+
+    <form id="formTurma">
+        <input type="text" placeholder="Nome da turma" id="nomeTurma" required>
+        <input type="number" placeholder="Máximo de alunos" id="maxAlunos" required min="1">
+        <button type="submit">Criar</button>
+    </form>
+
+    <hr>
+
+    <h1>📋 Turmas Disponíveis</h1>
+    <div id="listaTurmas"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
